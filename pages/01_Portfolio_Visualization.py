@@ -43,7 +43,7 @@ st.plotly_chart(fig_spy)
 # Set the header for the Equal-Weighted Portfolio visualization
 st.header("Magnificent 7: Equal-Weighted Portfolio")
 
-file_path = '/assets/mag7_adjclose_data.csv'
+file_path = 'assets/mag7_adjclose_data.csv'
 
 try:
     mag7_data = pd.read_csv(file_path, index_col=0, parse_dates=True)

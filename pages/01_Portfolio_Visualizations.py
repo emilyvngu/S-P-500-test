@@ -11,7 +11,7 @@ st.title("Portfolio Visualization")
 
 # Project Overview
 st.markdown("""
-### 📈 Project Overview: Portfolio Visualization
+### Project Overview: Portfolio Visualization
 
 This page compares two investment strategies:  
 - **SPY**, a market-wide index fund  
@@ -19,12 +19,12 @@ This page compares two investment strategies:
 
 We simulate how $100 would grow under each strategy over time using **log returns** and **compounded returns**.
 
-#### 🔢 Methodology
+#### Methodology
 - **Log returns** are used for daily price changes because they are time-additive and stable for financial modeling.
 - **Cumulative log returns** are summed across time and then exponentiated to get the total compounded return.
 - **Investment value** is calculated by multiplying compounded return by the initial $100.
 
-#### ⚖️ Why Visualize This?
+#### Why Visualize This?
 This helps compare how a diversified index fund performs versus a concentrated tech-heavy portfolio—highlighting trade-offs between **diversification**, **risk**, and **potential return**.
 """)
 

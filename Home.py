@@ -12,7 +12,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Page title
-st.title("📊 Portfolio Optimization Dashboard")
+st.title("Portfolio Optimization Dashboard")
 
 # Intro description
 st.markdown("""

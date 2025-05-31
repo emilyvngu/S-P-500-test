@@ -12,7 +12,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.title("ℹ️ About This Project")
+st.title("About This Project")
 
 # Intro
 st.markdown("""
@@ -31,7 +31,7 @@ A rolling-window **constrained minimum-variance optimizer** implemented in Julia
 
 ---
 
-### 💡 Key Skills Demonstrated
+### Key Skills Demonstrated
 - Data engineering with Python (pandas, yfinance)
 - Portfolio theory and risk-return metrics
 - Convex optimization modeling with Julia

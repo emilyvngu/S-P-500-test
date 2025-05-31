@@ -29,16 +29,7 @@ spy['Compounded Return'] = np.exp(spy['Cumulative Log Returns'])
 initial_investment = 100
 spy['Investment Value'] = initial_investment * spy['Compounded Return']
 
-# Plot the Investment Value over time using Plotly
-fig_spy = go.Figure()
-fig_spy.add_trace(go.Scatter(x=spy.index, y=spy['Investment Value'], mode='lines', name='SPY Investment'))
-fig_spy.update_layout(
-    title="Principal Growth over Time for SPY ($100 Investment)",
-    xaxis_title="Time",
-    yaxis_title="Investment Value ($)",
-    template="plotly_white"
-)
-st.plotly_chart(fig_spy)
+# Obtained information for later combined plot (SPY)
 
 # Set the header for the Equal-Weighted Portfolio visualization
 st.header("Magnificent 7: Equal-Weighted Portfolio")
@@ -72,16 +63,7 @@ compounded_returns = np.exp(cumulative_weighted_log_returns)
 # Calculate Investment Value
 investment_values = initial_investment * compounded_returns
 
-# Plot the growth of the $100 investment using Plotly
-fig_portfolio = go.Figure()
-fig_portfolio.add_trace(go.Scatter(x=data.index, y=investment_values, mode='lines', name='Equal-Weighted Portfolio', line=dict(color='red')))
-fig_portfolio.update_layout(
-    title="Principal Growth: Magnificent 7 Equal-Weighted Portfolio ($100 Investment)",
-    xaxis_title="Time",
-    yaxis_title="Investment Value ($)",
-    template="plotly_white"
-)
-st.plotly_chart(fig_portfolio)
+# Finished the necessary values for combined plot (SPY and Mag 7)
 
 fig_combined = go.Figure()
 

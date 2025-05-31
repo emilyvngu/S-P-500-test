@@ -25,8 +25,8 @@ Use the buttons below to explore:
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("📈 Portfolio Visualization"):
-        st.switch_page("pages/01_Portfolio_Visualization.py")
+    if st.button("📈 Portfolio Visualizations"):
+        st.switch_page("pages/01_Portfolio_Visualizations.py")
 
 with col2:
     if st.button("🧮 Backtesting (Julia)"):

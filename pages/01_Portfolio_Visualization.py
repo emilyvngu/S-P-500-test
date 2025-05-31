@@ -9,9 +9,7 @@ import os
 # Set page title
 st.title("Portfolio Visualization")
 
-# Set the header for SPY visualization
-st.header("SPY: Growth of $100 Investment")
-
+# SPY visualization:
 # Load SPY data
 file_path = 'assets/sp500_raw_data.csv'
 
@@ -31,8 +29,7 @@ spy['Investment Value'] = initial_investment * spy['Compounded Return']
 
 # Obtained information for later combined plot (SPY)
 
-# Set the header for the Equal-Weighted Portfolio visualization
-st.header("Magnificent 7: Equal-Weighted Portfolio")
+# Equal-Weighted Portfolio visualization:
 
 file_path = 'assets/mag7_adjclose_data.csv'
 

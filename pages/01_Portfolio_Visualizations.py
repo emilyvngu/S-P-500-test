@@ -64,13 +64,34 @@ fig_combined.update_layout(
 
 st.plotly_chart(fig_combined, use_container_width=True)
 
-# Optional caption
 st.caption("This chart compares the growth of a $100 investment in SPY vs. an equal-weighted Magnificent 7 portfolio.")
 
-# --- Optional Explanatory Section ---
-st.markdown("### Why This Visualization?")
-st.markdown("""
-This visualization highlights the difference in performance between a broad-market ETF (SPY) and a concentrated portfolio of high-growth tech stocks (the Magnificent 7).
+# --- Expanded Explanation ---
+with st.expander("📘 Why this comparison? (Click to expand)"):
+    st.markdown("""
+**Purpose of This Visualization**
 
-By comparing cumulative log returns and compounding them into investment value, we gain insight into how portfolio composition impacts long-term growth. Log returns are used for their time-additive property, and compounding provides a real-world perspective on investment performance over time.
+The goal is to compare the performance of:
+- **SPY**, an ETF that tracks the S&P 500 (broad market exposure), and  
+- An **equal-weighted 'Magnificent 7'** portfolio, which includes top-performing tech stocks.
+
+**Mathematics Behind It**
+
+- **Log Returns** are used instead of raw percent returns to make time-series analysis additive.  
+  Log returns: `log(P_t / P_{t-1})`
+
+- **Cumulative Log Returns** are calculated by summing log returns over time:  
+  `Σ log returns = log(final price / initial price)`
+
+- **Compounded Returns** are derived by exponentiating the cumulative log returns:  
+  `exp(cumulative log returns)`
+
+- Finally, we simulate how a **$100 investment** would grow by multiplying compounded returns by the initial investment.
+
+**Why It Matters**
+
+This method allows us to:
+- Normalize both portfolios to a common starting point.
+- Evaluate and **visualize long-term growth** patterns.
+- Understand the **trade-off between diversification (SPY)** and **concentration in high-growth assets (Mag 7)**.
 """)
